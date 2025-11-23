@@ -363,7 +363,25 @@ nav a:hover {
     width: 90%;
     max-width: none;
   }
+.about-card {
+    flex-direction: column;
+    height: auto;       /* 90vh yerine içerik kadar yükseklik */
+    padding: 20px;
+  }
+
+  .card-content {
+    padding: 20px;
+    width: 100%;
+    max-width: none;
+    font-size: 0.95em;
+    line-height: 1.6;   /* Yazılar daha ferah */
+  }
+
+  .card-content h2 {
+    font-size: 1.5em;
+  }
 }
+
 
 
 /* Sil Butonu */
