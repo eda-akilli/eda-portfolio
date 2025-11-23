@@ -1,0 +1,394 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F7EEDD;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: #8B6F52;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #F7EEDD;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+  color: #F7EEDD;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+/* Hero (masaüstü sabit düzen) */
+.hero-text h1 {
+  font-size: 2.5em;
+  color: #8B6F52;
+  position: absolute;
+  left: 720px;
+  top: 160px;
+  animation: fadeIn 1.2s ease-out forwards;
+}
+
+.hero-text p {
+  font-size: 1.1em;
+  position: absolute;
+  left: 650px;
+  top: 200px;
+  animation: fadeIn 1.4s ease-out forwards;
+}
+
+.btn {
+  background-color: #8B6F52;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+  text-decoration: none;
+  position: absolute;
+  left: 840px;
+  top: 260px;
+  animation: fadeIn 1.6s ease-out forwards;
+}
+
+.btn:hover {
+  background-color: #A57C5A;
+}
+
+.hero-img img {
+  width: 250px;
+  position: absolute;
+  right: 90px;
+  top: 90px;
+  animation: fadeIn 1.8s ease-out forwards;
+}
+
+/* İçerik (masaüstü sabit düzen) */
+.icerik {
+  text-align: center;
+  padding: 60px 30px;
+  position: absolute;
+  left: 450px;
+  top: 450px;
+  animation: fadeIn 2s ease-out forwards;
+}
+
+.icerik h2 {
+  color: #8B6F52;
+  margin-bottom: 10px;
+}
+
+.icerik p {
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  width: 200px;
+  height: 130px;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  animation: fadeIn 2.2s ease-out forwards;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* About */
+.about-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  animation: fadeIn 1.2s ease-out forwards;
+}
+
+.card-content {
+  background: #ffffff;
+  color: #8B6F52;
+  font-weight: bolder;
+  padding: 60px;
+  max-width: 700px;
+  width: 90%;
+  border-radius: 15px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  animation: fadeIn 1.4s ease-out forwards;
+}
+
+.card-content h2 {
+  margin-bottom: 30px;
+}
+
+/* İletişim */
+.iletisim {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  padding: 60px 20px;
+  animation: fadeIn 1.2s ease-out forwards;
+}
+
+.iletisim form {
+  background: #ffffff;
+  color: #8B6F52;
+  padding: 40px;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  animation: fadeIn 1.4s ease-out forwards;
+}
+
+.iletisim input,
+.iletisim textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  font-family: inherit;
+  resize: none;
+  background-color: white;
+  color: #8B6F52;
+}
+
+.submit {
+  color: #8B6F52;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #8B6F52;
+  color: white;
+}
+
+.tarif-cardd { 
+  display: block; 
+  background: #8B6F52; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+  padding: 20px; 
+  width: 250px; 
+  text-align: center; 
+  text-decoration: none; 
+  color: #F7EEDD; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 40px auto; 
+  animation: fadeIn 1.2s ease-out forwards;
+}
+
+.tarif-cardd:hover { 
+  transform: translateY(-5px) scale(1.03); 
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15); 
+}
+
+.tarif-cardd h3 { 
+  margin-bottom: 10px;
+  color: #F7EEDD; 
+}
+
+.tarif-cardd p {
+  font-size: 0.9em;
+  color: #F7EEDD;
+}
+
+/* Tarif Defteri */
+.tarif {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+  animation: fadeIn 1.2s ease-out forwards;
+}
+
+.tarif form {
+  background: #ffffff;
+  color: #8B6F52;
+  padding: 40px;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  animation: fadeIn 1.4s ease-out forwards;
+}
+
+.tarif input,
+.tarif textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  font-family: Arial, sans-serif;   
+  color: #333;                      
+  line-height: 1.5;                 
+  text-align: left;
+
+}
+
+.tarif button {
+  background-color: #8B6F52;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.tarif button:hover {
+  background-color: #A57C5A;
+}
+
+/* Tarif Kartları */
+.tarifler {
+  padding: 40px 20px;
+  text-align: left;
+}
+
+.tarif-card {
+  background: #fff8f0;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  animation: fadeIn 1.2s ease-out forwards;
+}
+
+.tarif-card h3 {
+  margin-top: 0;
+  color: #8B6F52;
+}
+
+.tarif-card p {
+  margin: 10px 0;
+  color: #333;
+}
+
+/* Animasyon */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Düzen */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .hero-text h1,
+  .hero-text p,
+  .btn,
+  .hero-img img {
+    position: static;
+    margin: 10px 0;
+  }
+
+  .hero-img img {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .icerik {
+    position: static;
+    padding: 30px 15px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    max-width: none;
+  }
+}
+
+
+/* Sil Butonu */
+.sil-butonu {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.sil-butonu form {
+  display: inline-block;
+  width: auto;
+}
+
+.sil-butonu button {
+  background-color: #8B6F52;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.sil-butonu button:hover {
+  background-color: #A57C5A;
+}
+
